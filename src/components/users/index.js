@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
 import Avatar from "react-avatar";
@@ -7,6 +7,12 @@ import "./style.css";
 
 const RegisteredUsers = ({ users, rooms, userId, userName, createRoom, setChatData }) => {
     const history = useHistory();
+
+    useEffect(() => {
+        if (!users) {
+            history.push("/");
+        }
+    }, []);
 
     const doesRoomExist = (selectedUserId) => {
         let room = rooms.find((room) => {

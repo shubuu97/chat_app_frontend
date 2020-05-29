@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Auth from "./components/auth";
 import Chat from "./components/chat";
 import Users from "./components/users";
-import "./app.css";
+import "./App.css";
 
 const App = () => {
     return (

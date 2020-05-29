@@ -32,3 +32,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (min-width: 320px) and (max-width: 700px) {
+    #root {
+        height: 90vh;
+    }
+}

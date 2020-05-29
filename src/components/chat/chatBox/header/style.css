@@ -1,0 +1,27 @@
+.headerContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #075e54;
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userName {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.typing {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.online {
+    font-size: 14px;
+}

@@ -1,0 +1,30 @@
+.inputContainer {
+    display: flex;
+    bottom: 0;
+    margin: 10px 5px;
+}
+
+.input {
+    border: none;
+    padding: 14px;
+    width: 95%;
+    font-size: 1.2em;
+    border-radius: 50px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.sendButton {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2979ff;
+    padding: 14px;
+    display: inline-block;
+    border: none;
+    width: 20%;
+}

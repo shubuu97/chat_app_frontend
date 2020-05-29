@@ -89,7 +89,7 @@ export const createRoom = (reqBody, cb) => {
                 dispatch({
                     type: "ROOM_CREATION_FAILED",
                     payload: {
-                        ...error.data,
+                        ...error.response.data,
                     },
                 });
             });

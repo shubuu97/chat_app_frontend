@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
 import Avatar from "react-avatar";
@@ -7,12 +7,6 @@ import "./style.css";
 
 const RegisteredUsers = ({ users, rooms, userId, userName, createRoom, setChatData }) => {
     const history = useHistory();
-
-    useEffect(() => {
-        if (!users) {
-            history.push("/");
-        }
-    }, []);
 
     const doesRoomExist = (selectedUserId) => {
         let room = rooms.find((room) => {
@@ -52,6 +46,15 @@ const RegisteredUsers = ({ users, rooms, userId, userName, createRoom, setChatDa
                     color="#128C7E"
                 />
                 <span>Hello, {(userName || "").split(" ")[0]}</span>
+                <span
+                    onClick={() => {
+                        localStorage.clear();
+                        history.push("/");
+                    }}
+                    style={{ marginLeft: "10px" }}
+                >
+                    Logout
+                </span>
             </div>
             {(users || []).map((user) => {
                 return (
@@ -62,7 +65,6 @@ const RegisteredUsers = ({ users, rooms, userId, userName, createRoom, setChatDa
                                 name={user.name || "Unknown"}
                                 size="45"
                                 round={true}
-                                // color="#128C7E"
                             />
                         </div>
                         <div>{user.name}</div>

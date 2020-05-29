@@ -22,7 +22,7 @@ const Chat = ({ selectedChatData, userId }) => {
         if (!roomId) {
             history.push("/users");
         }
-    }, []);
+    }, [history, roomId]);
 
     useEffect(() => {
         socket = io(BASE_URL);

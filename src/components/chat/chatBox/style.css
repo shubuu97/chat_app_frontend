@@ -18,10 +18,10 @@
 
 @media (min-width: 320px) and (max-width: 600px) {
     .outerContainer {
-        height: 90vh;
+        height: 98vh;
     }
 
     .innerContainer {
-        height: 90vh;
+        height: 98vh;
     }
 }

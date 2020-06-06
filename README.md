@@ -1,5 +1,8 @@
 Demo: https://morning-atoll-33546.herokuapp.com/
 
+Login Credentials: joe@gmail.com/123456
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
